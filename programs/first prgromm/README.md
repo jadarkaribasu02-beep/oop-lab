@@ -34,3 +34,11 @@ Enter the elements of matrix 1
 Enter the elements of matrix 2
 5 6
 7 8
+
+## Sample Output
+
+```text
+The sum of the two matrices is:
+6    8
+10   12
+```
