@@ -20,3 +20,17 @@ Compile:
 
 ```bash
 javac firstprgm.java
+
+## Sample Input
+
+```text
+Enter the matrix order N
+2
+
+Enter the elements of matrix 1
+1 2
+3 4
+
+Enter the elements of matrix 2
+5 6
+7 8
