@@ -1,4 +1,4 @@
-package programs;// folder 
+ 
 
 import java.util.Scanner;
 
