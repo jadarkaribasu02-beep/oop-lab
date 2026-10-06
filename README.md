@@ -19,6 +19,9 @@ Each program folder contains:
 | No. | Program |
 |-----|---------|
 | 1 | Matrix Addition |
+| 2| soon |
+| 3 | Student Management |
+
 
 More OOP Lab programs will be added as I complete them.
 
