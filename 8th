@@ -1,0 +1,58 @@
+class MyThread extends Thread
+{
+    public MyThread(String name)
+    {
+        super(name);
+        start();
+    }
+
+    public void run()
+    {
+        for (int i = 1; i <= 5; i++)
+        {
+            System.out.println(getName() + " Count " + i);
+
+            try
+            {
+                Thread.sleep(500); // Sleep for 500 milliseconds
+            }
+            catch (InterruptedException e)
+            {
+                System.out.println(
+                    Thread.currentThread().getName() + " Thread interrupted."
+                );
+            }
+        }
+    }
+}
+
+public class ThreadConcurrentExample
+{
+    public static void main(String[] args)
+    {
+        System.out.println(
+            "main thread started:" + Thread.currentThread().getName()
+        );
+
+        MyThread thread1 = new MyThread("child thread1:");
+        MyThread thread2 = new MyThread("child thread2:");
+
+        for (int i = 1; i <= 5; i++)
+        {
+            System.out.println("Main thread:Count " + i);
+
+            try
+            {
+                Thread.sleep(500);
+            }
+            catch (InterruptedException e)
+            {
+                System.out.println("Main thread interrupted");
+            }
+        }
+
+        System.out.println(
+            "Main thread ended:" + Thread.currentThread().getName()
+        );
+    }
+}
